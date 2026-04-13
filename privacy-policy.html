@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Doorstep</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #faf8f5;
+      color: #2a1a0e;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    header {
+      background: #2B1A0E;
+      padding: 40px 24px;
+      text-align: center;
+    }
+    header h1 { color: #C4956A; font-size: 28px; font-weight: 800; letter-spacing: -0.5px; }
+    header p  { color: #9A6A40; font-size: 14px; margin-top: 6px; }
+    main {
+      max-width: 760px;
+      margin: 48px auto;
+      padding: 0 24px 80px;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #2B1A0E;
+      margin: 40px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #e8d8c4;
+    }
+    h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #5A3520;
+      margin: 24px 0 8px;
+    }
+    p  { margin-bottom: 14px; color: #3a2510; }
+    ul { margin: 0 0 14px 20px; }
+    li { margin-bottom: 6px; color: #3a2510; }
+    a  { color: #C4956A; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .updated {
+      display: inline-block;
+      background: #f0e4d4;
+      border-radius: 8px;
+      padding: 8px 16px;
+      font-size: 13px;
+      color: #7A4A28;
+      margin-bottom: 32px;
+    }
+    .highlight {
+      background: #fff8f0;
+      border-left: 4px solid #C4956A;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+    }
+    footer {
+      text-align: center;
+      padding: 40px 24px;
+      font-size: 13px;
+      color: #9A6A40;
+      border-top: 1px solid #e8d8c4;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Doorstep</h1>
+  <p>Privacy Policy</p>
+</header>
+
+<main>
+  <span class="updated">Last updated: April 2025</span>
+
+  <p>
+    This Privacy Policy explains how Doorstep ("we", "our", or "us") collects, uses, stores,
+    and protects your personal information when you use the Doorstep mobile application ("App").
+    By using the App you agree to the practices described in this Policy.
+  </p>
+
+  <div class="highlight">
+    <strong>Short version:</strong> We collect only what we need to run the app. Your messages
+    are end-to-end encrypted — we cannot read them. We do not sell your data.
+  </div>
+
+  <!-- 1 -->
+  <h2>1. Who We Are</h2>
+  <p>
+    Doorstep is a neighbourhood-based social and dating app. The service is operated from
+    Australia. For privacy enquiries, contact us at:
+    <a href="mailto:privacy@doorstep.app">privacy@doorstep.app</a>
+  </p>
+
+  <!-- 2 -->
+  <h2>2. Information We Collect</h2>
+
+  <h3>Information you provide</h3>
+  <ul>
+    <li><strong>Account details</strong> — email address and password (stored via Supabase Auth)</li>
+    <li><strong>Profile information</strong> — display name, age, suburb (location_city), gender, intent, bio, and up to six photos</li>
+    <li><strong>Messages</strong> — text messages sent between matched users (end-to-end encrypted; see Section 5)</li>
+    <li><strong>Suburb board posts and comments</strong> — public posts, reactions, poll votes, and RSVP responses within your suburb</li>
+  </ul>
+
+  <h3>Information collected automatically</h3>
+  <ul>
+    <li><strong>Push notification token</strong> — a device token used to deliver notifications (stored against your profile; never shared with third parties for marketing)</li>
+    <li><strong>Usage data</strong> — swipe actions (knocks, rings, waves) stored to power the matching system</li>
+    <li><strong>App interactions</strong> — match creation, message timestamps, and read receipts</li>
+  </ul>
+
+  <h3>Information we do NOT collect</h3>
+  <ul>
+    <li>Precise GPS location — we use only your manually entered suburb name</li>
+    <li>Contacts, microphone, or camera roll beyond photos you explicitly upload</li>
+    <li>Advertising identifiers or tracking pixels</li>
+  </ul>
+
+  <!-- 3 -->
+  <h2>3. How We Use Your Information</h2>
+  <ul>
+    <li>To create and manage your account</li>
+    <li>To show your profile to other users in your suburb and facilitate connections</li>
+    <li>To deliver push notifications for messages, matches, and suburb activity</li>
+    <li>To enforce daily/weekly usage limits based on your plan (Free, Pro, Max)</li>
+    <li>To process subscription payments via Apple In-App Purchases</li>
+    <li>To detect and prevent abuse, spam, and policy violations</li>
+    <li>To improve the App based on aggregate (non-identifying) usage patterns</li>
+  </ul>
+
+  <!-- 4 -->
+  <h2>4. Legal Basis for Processing</h2>
+  <p>
+    We process your personal information on the following bases:
+  </p>
+  <ul>
+    <li><strong>Contract performance</strong> — processing necessary to provide the service you signed up for</li>
+    <li><strong>Legitimate interests</strong> — safety, fraud prevention, and service improvement</li>
+    <li><strong>Consent</strong> — where you have explicitly agreed (e.g. push notification permissions)</li>
+  </ul>
+
+  <!-- 5 -->
+  <h2>5. End-to-End Encryption</h2>
+  <div class="highlight">
+    All messages between matched users are encrypted on your device before being transmitted
+    and stored. We use X25519 key exchange and XSalsa20-Poly1305 encryption (via TweetNaCl).
+    Your private encryption key never leaves your device. This means <strong>we cannot read
+    your messages</strong>, and neither can anyone else without physical access to your device.
+  </div>
+
+  <!-- 6 -->
+  <h2>6. Data Sharing</h2>
+  <p>We do not sell, rent, or trade your personal information. We share data only with:</p>
+  <ul>
+    <li>
+      <strong>Supabase</strong> — our database and authentication provider. Data is stored
+      in their secure cloud infrastructure. See <a href="https://supabase.com/privacy" target="_blank">Supabase Privacy Policy</a>.
+    </li>
+    <li>
+      <strong>Expo (Push Notifications)</strong> — push notification tokens are transmitted
+      through Expo's push service to deliver alerts. See <a href="https://expo.dev/privacy" target="_blank">Expo Privacy Policy</a>.
+    </li>
+    <li>
+      <strong>RevenueCat</strong> — subscription management. RevenueCat receives your app
+      user ID (a random UUID) and purchase receipt data. See <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat Privacy Policy</a>.
+    </li>
+    <li>
+      <strong>Apple</strong> — In-App Purchase payments are processed entirely by Apple.
+      We do not receive your payment card details.
+    </li>
+    <li>
+      <strong>Law enforcement</strong> — if required by law or to protect the safety of users.
+    </li>
+  </ul>
+
+  <!-- 7 -->
+  <h2>7. Data Retention</h2>
+  <ul>
+    <li>Your account data is retained while your account is active</li>
+    <li>Messages are retained to support the conversation experience; deleting your account removes your messages</li>
+    <li>Suburb board posts are retained unless you delete them or your account is removed</li>
+    <li>Aggregate/anonymised analytics may be retained indefinitely</li>
+  </ul>
+
+  <!-- 8 -->
+  <h2>8. Your Rights</h2>
+  <p>You have the right to:</p>
+  <ul>
+    <li><strong>Access</strong> — request a copy of the personal data we hold about you</li>
+    <li><strong>Correction</strong> — update your profile information at any time within the App</li>
+    <li><strong>Deletion</strong> — delete your account via Settings → Delete Account. This removes your profile, photos, and messages permanently within 30 days</li>
+    <li><strong>Portability</strong> — request an export of your data by emailing us</li>
+    <li><strong>Objection</strong> — object to processing based on legitimate interests</li>
+  </ul>
+  <p>
+    To exercise any right, email <a href="mailto:privacy@doorstep.app">privacy@doorstep.app</a>.
+    We will respond within 30 days.
+  </p>
+
+  <!-- 9 -->
+  <h2>9. Children's Privacy</h2>
+  <p>
+    Doorstep is intended for users aged <strong>18 and over</strong>. We do not knowingly collect
+    information from anyone under 18. If you believe a minor has created an account, please
+    contact us and we will remove it promptly.
+  </p>
+
+  <!-- 10 -->
+  <h2>10. Security</h2>
+  <p>
+    We use industry-standard security measures including TLS encryption in transit, encrypted
+    storage, end-to-end message encryption, and access controls on our database. No system is
+    perfectly secure; in the event of a data breach we will notify affected users as required by law.
+  </p>
+
+  <!-- 11 -->
+  <h2>11. Australian Privacy Act</h2>
+  <p>
+    We comply with the Australian Privacy Act 1988 (Cth) and the Australian Privacy Principles.
+    If you have a complaint about how we handle your personal information, you may contact the
+    Office of the Australian Information Commissioner (OAIC) at <a href="https://www.oaic.gov.au" target="_blank">oaic.gov.au</a>.
+  </p>
+
+  <!-- 12 -->
+  <h2>12. Changes to This Policy</h2>
+  <p>
+    We may update this Policy from time to time. When we make material changes we will notify
+    you via a push notification or in-app message. Continued use of the App after changes
+    constitutes acceptance.
+  </p>
+
+  <!-- 13 -->
+  <h2>13. Contact Us</h2>
+  <p>
+    For any privacy-related questions or requests:<br />
+    <a href="mailto:privacy@doorstep.app">privacy@doorstep.app</a>
+  </p>
+</main>
+
+<footer>
+  &copy; 2025 Doorstep. All rights reserved.
+</footer>
+
+</body>
+</html>
